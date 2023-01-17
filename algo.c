@@ -318,11 +318,11 @@ char S_func(node **p_head)
     pnode destNode = findNode(temp_head, destNodeNum);
     if (destNode->distance < INT_MAX)
     {
-        printf("Dijsktra shortest path: %d\n", destNode->distance);
+        printf("Dijsktra shortest path: %d \n", destNode->distance);
     }
     else
     {
-        printf("Dijsktra shortest path: -1\n");
+        printf("Dijsktra shortest path: -1 \n");
     }
 
     // if we get EOF we send 'R' for program ending state,
@@ -402,11 +402,11 @@ char T_func(node **head)
     T_Combinations(head, arr, 0, amountOfNums - 1);
     if (minimunOfPaths == INT_MAX)
     {
-        printf("TSP shortest path: -1\n");
+        printf("TSP shortest path: -1 \n");
     }
     else
     {
-        printf("TSP shortest path: %d\n", minimunOfPaths);
+        printf("TSP shortest path: %d \n", minimunOfPaths);
     }
 
     free(arr);
